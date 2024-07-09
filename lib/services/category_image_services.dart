@@ -25,4 +25,10 @@ class ImageConstants {
   static const IMG_PATH_SPORTS = "${BASE_IMG_PATH}sports.png";
   static const IMG_PATH_EDUCATION = "${BASE_IMG_PATH}education.png";
   static const IMG_PATH_GYM = "${BASE_IMG_PATH}gym.png";
+  static const IMG_PATH_SALARY = "${BASE_IMG_PATH}wallet.png";
+  static const IMG_PATH_AWARDS = "${BASE_IMG_PATH}mobile-transfer.png";
+  static const IMG_PATH_GRANTS = "${BASE_IMG_PATH}gift-box.png";
+  static const IMG_PATH_RENTAL = "${BASE_IMG_PATH}home.png";
+  static const IMG_PATH_INVESTMENT = "${BASE_IMG_PATH}piggy-bank.png";
+  static const IMG_PATH_LOTTERY = "${BASE_IMG_PATH}dice.png";
 }

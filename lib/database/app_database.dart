@@ -2,7 +2,7 @@ import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:trackizer/models/user_model.dart';
+import 'package:trackizer/core/models/user_model.dart';
 
 class AppDataBase{
 
