@@ -87,6 +87,7 @@ class TransactionController with ChangeNotifier {
     if (departmentName == transport) return pngPath(transportPng);
     if (departmentName == salary) return pngPath(salaryPng);
     if (departmentName == accessories) return pngPath(accessoriesPng);
+    if (departmentName == others) return pngPath(lotteryPng);
     return pngPath(othersPng);
   }
 }

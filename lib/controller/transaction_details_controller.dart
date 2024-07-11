@@ -62,6 +62,7 @@ class TransDetailController with ChangeNotifier {
     if (selectedDepartment == transport) return pngPath(transportPng);
     if (selectedDepartment == salary) return pngPath(salaryPng);
     if (selectedDepartment == accessories) return pngPath(accessoriesPng);
+    if (selectedDepartment == others) return pngPath(lotteryPng);
     return pngPath(othersPng);
   }
 
