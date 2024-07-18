@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:trackizer/constants/colors.dart';
 import 'package:trackizer/constants/date_convert.dart';
@@ -68,7 +69,7 @@ class TransactionList extends StatelessWidget {
                   color: whiteColor,
                   boxShadow: [BoxShadow(color: blackColor)],
                   borderRadius: BorderRadius.all(Radius.circular(10.0))),
-              child: Image.asset(
+              child: SvgPicture.asset(
                 transactionController.tileIcon(data.category ?? others),
                 height: 35.0,
                 color: svgColor,

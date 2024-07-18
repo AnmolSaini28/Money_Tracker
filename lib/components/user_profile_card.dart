@@ -37,7 +37,7 @@ class UserProfileCard extends StatelessWidget {
                   "Anmol Saini",
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12.0),
                 ),
               ],
             ),

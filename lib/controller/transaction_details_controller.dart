@@ -35,35 +35,15 @@ class TransDetailController with ChangeNotifier {
   }
 
   String titleIcon() {
-    if (selectedDepartment == coffee) return pngPath(coffeePng);
-    if (selectedDepartment == lottery) return pngPath(lotteryPng);
-    if (selectedDepartment == education) return pngPath(educationPng);
-    if (selectedDepartment == fastFood) return pngPath(fastFoodPng);
-    if (selectedDepartment == gift) return pngPath(giftPng);
-    if (selectedDepartment == gym) return pngPath(gymPng);
-    if (selectedDepartment == clothing) return pngPath(clothingPng);
-    if (selectedDepartment == health) return pngPath(healthPng);
-    if (selectedDepartment == home) return pngPath(homePng);
-    if (selectedDepartment == food) return pngPath(foodPng);
-    if (selectedDepartment == beauty) return pngPath(beautyPng);
-    if (selectedDepartment == recharge) return pngPath(rechargePng);
-    if (selectedDepartment == bills) return pngPath(billsPng);
-    if (selectedDepartment == movie) return pngPath(moviePng);
-    if (selectedDepartment == entertainment) return pngPath(entertainmentPng);
-    if (selectedDepartment == petrol) return pngPath(petrolPng);
-    if (selectedDepartment == investment) return pngPath(investmentPng);
-    if (selectedDepartment == restaurant) return pngPath(restaurantPng);
-    if (selectedDepartment == shopping) return pngPath(shoppingPng);
-    if (selectedDepartment == snacks) return pngPath(snacksPng);
-    if (selectedDepartment == sports) return pngPath(sportsPng);
-    if (selectedDepartment == tools) return pngPath(toolsPng);
-    if (selectedDepartment == travel) return pngPath(travelPng);
-    if (selectedDepartment == groceries) return pngPath(groceriesPng);
-    if (selectedDepartment == transport) return pngPath(transportPng);
-    if (selectedDepartment == salary) return pngPath(salaryPng);
-    if (selectedDepartment == accessories) return pngPath(accessoriesPng);
-    if (selectedDepartment == others) return pngPath(lotteryPng);
-    return pngPath(othersPng);
+    if (selectedDepartment == health) return svgPath(healthSvg);
+    if (selectedDepartment == family) return svgPath(familySvg);
+    if (selectedDepartment == shopping) return svgPath(shoppingSvg);
+    if (selectedDepartment == food) return svgPath(foodSvg);
+    if (selectedDepartment == vehicle) return svgPath(vehicleSvg);
+    if (selectedDepartment == salon) return svgPath(salonSvg);
+    if (selectedDepartment == devices) return svgPath(devicesSvg);
+    if (selectedDepartment == office) return svgPath(officeSvg);
+    return svgPath(othersSvg);
   }
 
   void toTransactionDetail({

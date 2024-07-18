@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:trackizer/constants/colors.dart';
 import 'package:trackizer/constants/strings.dart';
@@ -68,68 +69,8 @@ class TransactionDetail extends StatelessWidget {
                 crossAxisCount: 3, childAspectRatio: 1.4),
             children: [
               categoryIcons(
-                  text: coffee,
-                  pngName: coffeePng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == coffee
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(coffee)),
-              categoryIcons(
-                  text: lottery,
-                  pngName: lotteryPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == lottery
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(lottery)),
-              categoryIcons(
-                  text: education,
-                  pngName: educationPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == education
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(education)),
-              categoryIcons(
-                  text: fastFood,
-                  pngName: fastFoodPng,
-                  isSelected: transDetailController!.selectedDepartment == fastFood
-                      ? true
-                      : false,
-                  onPress: () => transDetailController!.changeDepartment(fastFood)),
-              categoryIcons(
-                  text: gift,
-                  pngName: giftPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == gift
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(gift)),
-              categoryIcons(
-                  text: gym,
-                  pngName: gymPng,
-                  isSelected: transDetailController!.selectedDepartment == gym
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(gym)),
-              categoryIcons(
-                  text: clothing,
-                  pngName: clothingPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == clothing
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(clothing)),
-              categoryIcons(
                   text: health,
-                  pngName: healthPng,
+                  svgName: healthSvg,
                   isSelected:
                   transDetailController!.selectedDepartment == health
                       ? true
@@ -137,98 +78,17 @@ class TransactionDetail extends StatelessWidget {
                   onPress: () =>
                       transDetailController!.changeDepartment(health)),
               categoryIcons(
-                  text: home,
-                  pngName: homePng,
+                  text: family,
+                  svgName: familySvg,
                   isSelected:
-                  transDetailController!.selectedDepartment == home
+                  transDetailController!.selectedDepartment == family
                       ? true
                       : false,
                   onPress: () =>
-                      transDetailController!.changeDepartment(home)),
-              categoryIcons(
-                  text: food,
-                  pngName: foodPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == food
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(food)),
-              categoryIcons(
-                  text: beauty,
-                  pngName: beautyPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == beauty
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(beauty)),
-              categoryIcons(
-                  text: recharge,
-                  pngName: rechargePng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == recharge
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(recharge)),
-              categoryIcons(
-                  text: bills,
-                  pngName: billsPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == bills
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(bills)),
-              categoryIcons(
-                  text: movie,
-                  pngName: moviePng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == movie
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(movie)),
-              categoryIcons(
-                  text: entertainment,
-                  pngName: entertainmentPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == entertainment
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(entertainment)),
-              categoryIcons(
-                  text: petrol,
-                  pngName: petrolPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == petrol
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(petrol)),
-              categoryIcons(
-                  text: investment,
-                  pngName: investmentPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == investment
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(investment)),
-              categoryIcons(
-                  text: restaurant,
-                  pngName: restaurantPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == restaurant
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(restaurant)),
+                      transDetailController!.changeDepartment(family)),
               categoryIcons(
                   text: shopping,
-                  pngName: shoppingPng,
+                  svgName: shoppingSvg,
                   isSelected:
                   transDetailController!.selectedDepartment == shopping
                       ? true
@@ -236,80 +96,50 @@ class TransactionDetail extends StatelessWidget {
                   onPress: () =>
                       transDetailController!.changeDepartment(shopping)),
               categoryIcons(
-                  text: snacks,
-                  pngName: snacksPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == snacks
+                  text: food,
+                  svgName: foodSvg,
+                  isSelected: transDetailController!.selectedDepartment == food
                       ? true
                       : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(snacks)),
+                  onPress: () => transDetailController!.changeDepartment(food)),
               categoryIcons(
-                  text: sports,
-                  pngName: sportsPng,
+                  text: vehicle,
+                  svgName: vehicleSvg,
                   isSelected:
-                  transDetailController!.selectedDepartment == sports
+                  transDetailController!.selectedDepartment == vehicle
                       ? true
                       : false,
                   onPress: () =>
-                      transDetailController!.changeDepartment(sports)),
+                      transDetailController!.changeDepartment(vehicle)),
               categoryIcons(
-                  text: tools,
-                  pngName: toolsPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == tools
+                  text: salon,
+                  svgName: salonSvg,
+                  isSelected: transDetailController!.selectedDepartment == salon
                       ? true
                       : false,
                   onPress: () =>
-                      transDetailController!.changeDepartment(tools)),
+                      transDetailController!.changeDepartment(salon)),
               categoryIcons(
-                  text: travel,
-                  pngName: travelPng,
+                  text: devices,
+                  svgName: devicesSvg,
                   isSelected:
-                  transDetailController!.selectedDepartment == travel
+                  transDetailController!.selectedDepartment == devices
                       ? true
                       : false,
                   onPress: () =>
-                      transDetailController!.changeDepartment(travel)),
+                      transDetailController!.changeDepartment(devices)),
               categoryIcons(
-                  text: groceries,
-                  pngName: groceriesPng,
+                  text: office,
+                  svgName: officeSvg,
                   isSelected:
-                  transDetailController!.selectedDepartment == groceries
+                  transDetailController!.selectedDepartment == office
                       ? true
                       : false,
                   onPress: () =>
-                      transDetailController!.changeDepartment(groceries)),
-              categoryIcons(
-                  text: transport,
-                  pngName: transportPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == transport
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(transport)),
-              categoryIcons(
-                  text: salary,
-                  pngName: salaryPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == salary
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(salary)),
-              categoryIcons(
-                  text: accessories,
-                  pngName: accessoriesPng,
-                  isSelected:
-                  transDetailController!.selectedDepartment == accessories
-                      ? true
-                      : false,
-                  onPress: () =>
-                      transDetailController!.changeDepartment(accessories)),
+                      transDetailController!.changeDepartment(office)),
               categoryIcons(
                   text: others,
-                  pngName: othersPng,
+                  svgName: othersSvg,
                   isSelected:
                   transDetailController!.selectedDepartment == others
                       ? true
@@ -338,7 +168,7 @@ class TransactionDetail extends StatelessWidget {
                           prefixIcon: Padding(
                             padding:
                             const EdgeInsets.only(right: 15.0, left: 5.0),
-                            child: Image.asset(
+                            child: SvgPicture.asset(
                               transDetailController!.titleIcon(),
                               height: 5.0,
                               color: whiteColor,
@@ -357,7 +187,7 @@ class TransactionDetail extends StatelessWidget {
                       cursorColor: greyText,
                       style: TextStyle(
                           color: greyText,
-                          fontSize: 20,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold),
                       decoration: InputDecoration(
                           hintText: "Amount",
@@ -387,7 +217,7 @@ class TransactionDetail extends StatelessWidget {
 
   Padding categoryIcons({
     required String text,
-    required String pngName,
+    required String svgName,
     required bool isSelected,
     required Function() onPress,
   }) {
@@ -408,8 +238,8 @@ class TransactionDetail extends StatelessWidget {
           child: Column(
             children: [
               Expanded(
-                child: Image.asset(
-                  pngPath(pngName),
+                child: SvgPicture.asset(
+                  svgPath(svgName),
                   height: 35.0,
                   color: svgColor,
                 ),

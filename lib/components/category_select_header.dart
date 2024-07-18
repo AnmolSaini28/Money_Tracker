@@ -5,7 +5,6 @@ import 'package:trackizer/constants/colors.dart';
 import 'package:trackizer/constants/strings.dart';
 import 'package:trackizer/controller/report_controller.dart';
 
-
 class CategorySelectHeader extends StatelessWidget {
   const CategorySelectHeader({Key? key}) : super(key: key);
 
