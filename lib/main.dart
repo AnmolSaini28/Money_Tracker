@@ -4,7 +4,7 @@ import 'package:trackizer/constants/colors.dart';
 import 'package:trackizer/controller/report_controller.dart';
 import 'package:trackizer/controller/transaction_controller.dart';
 import 'package:trackizer/controller/transaction_details_controller.dart';
-import 'package:trackizer/screens/home.dart';
+import 'package:trackizer/screens/splash_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             primaryColor: primaryColor, scaffoldBackgroundColor: Colors.white),
         debugShowCheckedModeBanner: false,
-        home: Home(),
+        home: SplashScreen(),
       ),
     );
   }

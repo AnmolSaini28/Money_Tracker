@@ -42,6 +42,10 @@ dependencies:
   flutter_svg: ^0.22.0
   intl: ^0.17.0
   pie_chart: ^5.0.0
+  animated_text_kit: ^4.2.2
+  google_fonts: ^6.1.0
+  animated_splash_screen: ^1.2.0
+
 
 dev_dependencies:
   flutter_test:
